@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="cs"
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", nunitoSans.variable, geistMonoHeading.variable)}
     >

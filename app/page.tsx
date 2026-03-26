@@ -1,19 +1,29 @@
-import { Button } from "@/components/ui/button"
+import { Navbar } from "./_components/navbar";
+import { Hero } from "./_components/hero";
+import { TwoCards } from "./_components/two-cards";
+import { Services } from "./_components/services";
+import { WhyUs } from "./_components/why-us";
+import { Timeline } from "./_components/timeline";
+import { LogoStrip } from "./_components/logo-strip";
+import { ContactSection } from "./_components/contact-section";
+import { TabsWrapper } from "./_components/tabs-wrapper";
+import { SiteFooter } from "./_components/site-footer";
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
-  )
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <TwoCards />
+        <Services />
+        <WhyUs />
+        <Timeline />
+        <LogoStrip />
+        <ContactSection />
+        <TabsWrapper />
+      </main>
+      <SiteFooter />
+    </>
+  );
 }
